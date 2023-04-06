@@ -1,0 +1,15 @@
+.slider{
+
+  & .hd-img, .tablet-img {
+    height: 100% !important;
+    background-image: url('../../assest/img/slider/slider.jpg') !important;
+  }
+
+  & .tablet{
+    width: 55%;
+    height: 55%;
+    bottom: -50px;
+    left: 5%;
+  }
+
+}

@@ -9,9 +9,10 @@ const titleObj: TitleObj[] = [
     {title: 'Event Ticket Store  |  Front-End', desc: 'React | Redux (Saga) | MobX | TypeScript | SCSS | Webpack'},
     {title: 'Event Ticket Store  |  Back-End', desc: 'Java, PostgresSql, Spring-Boot, Hibernate, JPA, Spring-Security, JWT'},
     {title: 'Sneakers store', desc: 'Node.js | Express | JavaScript | Handlebars | Jwt'},
-    {title: 'Game', desc: 'JavaScript, Html, Scss'},
-    {title: 'Slider Library', desc: 'Js, Html, CSS - You can buy it on www.codester.com'},
     {title: 'Restaurant', desc: 'JavaScript, Scss, Html'},
+    {title: 'Slider Library', desc: 'Js, Html, CSS - You can buy it on www.codester.com'},
+    {title: 'Game', desc: 'JavaScript, Html, Scss'},
+
 
 ]
 

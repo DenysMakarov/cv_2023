@@ -1,0 +1,29 @@
+.shoes-store{
+
+  & .hd-img, .tablet-img{
+    background-image: url('../../assest/img/snikers/snk_full.jpg')!important;
+  }
+
+  & .tablet{
+    left: -10%;
+    animation-name: s-tablet-appear;
+
+    &:hover{
+      width: 65%;
+    }
+  }
+
+  & .mobile{
+    left: 53%;
+    animation-name: s-mobile-appear;
+
+    &:hover{
+      width: 18%;
+      height: 43%;
+    }
+
+    & .mobile-img{
+      background-image: url('../../assest/img/snikers/snk_iphone.jpg')!important;
+    }
+  }
+}

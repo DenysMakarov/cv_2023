@@ -8,11 +8,8 @@ const Content : FC = () => {
 
     return (
         <section className='content'>
-
             <LeftBlock num={num} setNum={setNum} />
-
             <RightBlock num={num}/>
-
         </section>
     );
 };

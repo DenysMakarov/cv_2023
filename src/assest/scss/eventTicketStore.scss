@@ -1,0 +1,66 @@
+.event {
+
+  & .hd {
+    border: 1px solid red;
+  }
+
+  & .hd-img, .tablet-img {
+    height: 100% !important;
+    background-image: url('../../assest/img/react/react_PC.jpg') !important;
+  }
+
+  & .tablet {
+    border: 1px solid red;
+    left: -10%;
+    animation-name: e-mobile-appear;
+    background-image: url('../../assest/img/react/react_iPad.jpg') !important;
+
+    &:hover{
+      left: -15%;
+    }
+  }
+
+  & .mobile {
+    border: 1px solid red;
+    left: 53%;
+    animation-name: e-mobile-appear;
+
+    &:hover{
+      width: 20%;
+      height: 45%;
+    }
+
+    & .mobile-img {
+      height: 300% !important;
+      background-image: url('../../assest/img/react/react_iPhone.jpg') !important;
+    }
+  }
+
+  & .definer {
+    border: 1px solid red;
+    width: 15%;
+    height: 8%;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 10000;
+    bottom: 0;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+  }
+
+  & .definer-b, .definer-f {
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    animation-name: definer-b;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+  }
+
+  & .definer-f{
+    animation-name: definer-f;
+  }
+}

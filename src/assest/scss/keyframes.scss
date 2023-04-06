@@ -1,0 +1,99 @@
+@keyframes r-appear {
+  0%{
+    opacity: 0;
+    //transform: rotateX(2deg) rotateY(90deg) rotate(0deg) translateX(0) translateY(0) translateZ(0);
+    //-webkit-transform: rotateX(2deg) rotateY(-4deg) rotate(0deg) translateX(0) translateY(0) translateZ(0);
+    transform: rotateX(0deg) rotateY(50deg) rotate(0deg) translateX(490px) translateY(0px) translateZ(300px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: rotateX(2deg) rotateY(-4deg) rotate(0deg) translateX(0) translateY(0) translateZ(0);
+    -webkit-transform: rotateX(2deg) rotateY(-4deg) rotate(0deg) translateX(0) translateY(0) translateZ(0);
+  }
+}
+
+@keyframes r-table-appear {
+  0%{
+    opacity: 0;
+    right: -40%;
+  }
+
+  100%{
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@keyframes r-mobile-appear {
+  0%{
+    opacity: 0;
+    left: -20%;
+  }
+
+  100%{
+    opacity: 1;
+    left: 29%;
+  }
+}
+
+@keyframes s-tablet-appear {
+  0%{
+    opacity: 0;
+    bottom: 300px;
+  }
+
+  100%{
+    opacity: 1;
+    bottom: -50px;
+  }
+}
+
+@keyframes s-mobile-appear {
+  0%{
+    opacity: 0;
+    bottom: -240px;
+  }
+
+  100%{
+    opacity: 1;
+    bottom: -40px;
+  }
+}
+
+@keyframes e-mobile-appear {
+  0%{
+    opacity: 0;
+    bottom: -240px;
+  }
+
+  100%{
+    opacity: 1;
+    bottom: -40px;
+  }
+}
+
+@keyframes definer-b {
+  0%{
+    opacity: 0;
+    bottom: -140px;
+  }
+
+  100%{
+    opacity: 1;
+    bottom: 0px;
+  }
+}
+
+@keyframes definer-f {
+  0%{
+    opacity: 0;
+    right: -10%;
+  }
+
+  100%{
+    opacity: 1;
+    right: 10%;
+  }
+}
+

@@ -1,27 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;600&display=swap');
-
-@mixin outer-items {
-  transform: rotateX(2deg) rotateY(-4deg) rotate(0deg) translateX(0) translateY(0) translateZ(0);
-  overflow: auto;
-  border-radius: 10px;
-  box-shadow: 10px 10px 5px 0 rgba(0,0,0,.75);
-  transition: .5s;
-
-  &::-webkit-scrollbar{
-    display: none;
-  }
-
-  &:hover{
-    bottom: 0;
-  }
-}
-
-@mixin inner-img {
-  width: 100%;
-  background-size: cover;
-
-
-}
 
 .container {
   max-width: 1750px;
@@ -34,6 +10,7 @@
 .content {
   width: 100%;
   height: 70%;
+  max-height: 760px;
   margin-top: 10%;
   position: relative;
   box-sizing: border-box;
@@ -115,6 +92,7 @@
       transition: .5s;
       opacity: 0;
       cursor: pointer;
+
     }
 
     &:hover > .number-block {
@@ -141,71 +119,6 @@
   justify-content: center;
   align-items: center;
   //border: 1px solid red;
-
-
-  .restaurant {
-    width: 90%;
-    height: 90%;
-    transition: .5s;
-    position: relative;
-    perspective: 500px;
-    perspective-origin: 50% 50%;
-
-    .hd {
-      width: 95%;
-      height: 95%;
-      //border: 1px solid red;
-      position: absolute;
-      z-index: 10;
-      bottom: -20px;
-      @include outer-items
-
-      .hd-img{
-        background-image: url('../../assest/img/restaurant/restaurant.jpg');
-        background-size: cover;
-        width: 100%;
-        height: 430%;
-      }
-    }
-
-    .tablet{
-      @include outer-items;
-      position: absolute;
-      z-index: 100;
-      bottom: -40px;
-      right: -20px;
-      width: 70%;
-      height: 60%;
-
-      .tablet-img{
-        width: 100%;
-        height: 500%;
-        background-size: cover;
-        background-image: url('../../assest/img/restaurant/restaurant.jpg');
-      }
-    }
-
-    .mobile{
-      @include outer-items;
-      z-index: 1000;
-      position: absolute;
-      width: 17%;
-      height: 40%;
-      bottom: -40px;
-      left: 28%;
-
-
-      .mobile-img{
-        @include inner-img;
-        height: 400%;
-        background-image: url('../../assest/img/restaurant/restaurant_iphone.jpg');
-      }
-
-
-    }
-
-  }
-
 
 }
 
