@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;600&display=swap');
+
+@mixin outer-items {
+  transform: rotateX(2deg) rotateY(-4deg) rotate(0deg) translateX(0) translateY(0) translateZ(0);
+  overflow: auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0 rgba(0,0,0,.75);
+  transition: .5s;
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+
+  &:hover{
+    bottom: 0;
+  }
+}
+
+@mixin inner-img {
+  width: 100%;
+  background-size: cover;
+
+
+}
+
+.container {
+  max-width: 1750px;
+  margin: auto;
+  height: 100%;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  height: 70%;
+  margin-top: 10%;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  //border: 1px solid red;
+  //margin: 0;
+
+}
+
+.left-block {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //border: 1px solid red;
+
+  .work {
+    display: flex;
+    color: white;
+    //border: 1px solid red;
+    padding: 20px 10px;
+    position: relative;
+
+
+    div {
+      //border: 1px solid red;
+      font-family: 'Libre Franklin', sans-serif;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      .title {
+        padding: 0;
+        margin: 0;
+        font-size: 26px;
+        font-family: 'Libre Franklin', sans-serif;
+        cursor: pointer;
+      }
+
+      .desc {
+        margin: 0;
+        font-size: 15px;
+      }
+
+    }
+
+    .number-block {
+      transition: .3s;
+      flex-direction: row;
+      justify-content: end;
+      width: 20px;
+      padding-top: 10px;
+
+      div {
+        transition: .3s;
+        color: hsla(0, 0%, 100%, .5);
+        font-size: 8px;
+      }
+    }
+
+    .title-block {
+      padding-left: 5px;
+      transition: .5s;
+    }
+
+    .git-link {
+      position: absolute;
+      right: 10%;
+      width: 100px;
+      height: 30px;
+      margin-left: 150px;
+      margin-top: -20px;
+      border-radius: 5px;
+      background: transparent;
+      border: 1px solid red;
+      color: white;
+      transition: .5s;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    &:hover > .number-block {
+      opacity: 0;
+      padding-left: 10px;
+
+      div {
+        margin-right: -10px;
+      }
+    }
+
+    &:hover > .git-link {
+      margin-top: 10px;
+      opacity: 1;
+      margin-left: 100px;
+    }
+  }
+}
+
+.right-block {
+  width: 60%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //border: 1px solid red;
+
+
+  .restaurant {
+    width: 90%;
+    height: 90%;
+    transition: .5s;
+    position: relative;
+    perspective: 500px;
+    perspective-origin: 50% 50%;
+
+    .hd {
+      width: 95%;
+      height: 95%;
+      //border: 1px solid red;
+      position: absolute;
+      z-index: 10;
+      bottom: -20px;
+      @include outer-items
+
+      .hd-img{
+        background-image: url('../../assest/img/restaurant/restaurant.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 430%;
+      }
+    }
+
+    .tablet{
+      @include outer-items;
+      position: absolute;
+      z-index: 100;
+      bottom: -40px;
+      right: -20px;
+      width: 70%;
+      height: 60%;
+
+      .tablet-img{
+        width: 100%;
+        height: 500%;
+        background-size: cover;
+        background-image: url('../../assest/img/restaurant/restaurant.jpg');
+      }
+    }
+
+    .mobile{
+      @include outer-items;
+      z-index: 1000;
+      position: absolute;
+      width: 17%;
+      height: 40%;
+      bottom: -40px;
+      left: 28%;
+
+
+      .mobile-img{
+        @include inner-img;
+        height: 400%;
+        background-image: url('../../assest/img/restaurant/restaurant_iphone.jpg');
+      }
+
+
+    }
+
+  }
+
+
+}
+
