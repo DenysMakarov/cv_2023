@@ -10,6 +10,10 @@
     height: 55%;
     bottom: -50px;
     left: 5%;
+
+    & .tablet-img{
+      background-image: url('../../assest/img/slider/codester.png') !important;
+    }
   }
 
 }

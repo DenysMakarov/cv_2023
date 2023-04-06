@@ -4,7 +4,7 @@ import RightBlock from "./RightBlock";
 
 
 const Content : FC = () => {
-    const [num, setNum] = useState<number>(1)
+    const [num, setNum] = useState<number>(6)
 
     return (
         <section className='content'>

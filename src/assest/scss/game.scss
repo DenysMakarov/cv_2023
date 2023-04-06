@@ -1,0 +1,45 @@
+.game{
+
+  & .card-box{
+    width: 110%;
+    height: 45%;
+    z-index: 10!important;
+    position: absolute;
+    left: -10%;
+    bottom: -7%;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    -webkit-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+  }
+
+  & .card{
+    width: 18%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    border-radius: 10px;
+    //position: relative;
+    background-size: cover;
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,.75);
+    transition: .3s;
+    bottom: 0;
+
+    opacity: 0;
+    animation-name: card;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+
+
+    &:hover{
+      bottom: 10%;
+    }
+  }
+
+  & .hd-img, {
+    height: 100% !important;
+    background-image: url('../../assest/img/game/bg_game.jpg') !important;
+  }
+
+
+}

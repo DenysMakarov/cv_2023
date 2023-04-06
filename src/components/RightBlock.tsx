@@ -3,6 +3,7 @@ import Restaurant from "./works/restaurant/Restaurant";
 import ShoesStore from "./works/shoesStore/ShoesStore";
 import EventTicketStore from "./works/eventTicketStore/EventTicketStore";
 import Slider from "./works/slider/Slider";
+import Game from "./works/game/Game";
 
 
 type ImgBlock = {
@@ -34,6 +35,7 @@ const RightBlock: FC<RightBlockProps> = ({num}) => {
             case 3 : return <ShoesStore/>
             case 4 : return <Restaurant/>
             case 5 : return <Slider/>
+            case 6 : return <Game/>
             default : return <div>Hello</div>
         }
     }
