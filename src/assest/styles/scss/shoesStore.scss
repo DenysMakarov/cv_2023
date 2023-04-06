@@ -1,7 +1,7 @@
 .shoes-store{
 
   & .hd-img, .tablet-img{
-    background-image: url('../../assest/img/snikers/snk_full.jpg')!important;
+    background-image: url('src/assest/img/snikers/snk_full.jpg')!important;
   }
 
   & .tablet{
@@ -23,7 +23,7 @@
     }
 
     & .mobile-img{
-      background-image: url('../../assest/img/snikers/snk_iphone.jpg')!important;
+      background-image: url('src/assest/img/snikers/snk_iphone.jpg')!important;
     }
   }
 }
