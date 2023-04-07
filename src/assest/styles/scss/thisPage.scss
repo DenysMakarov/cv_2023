@@ -1,0 +1,23 @@
+.this-page{
+  margin-top: 3%;
+
+  & .hd-this-page{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    & .hd-img,{
+      position: absolute;
+      height: 100% !important;
+      background-image: url('../../img/bg_2.jpg') !important;
+    }
+
+  & div{
+    z-index: 1000000;
+    color: #ffffff;
+    font-family: 'Offside', cursive;
+    font-size: 2rem;
+  }
+}

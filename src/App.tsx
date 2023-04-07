@@ -1,7 +1,7 @@
 import React from 'react';
 import Content from "./components/Content";
 import Footer from "./components/Footer";
-// import './assest/scss/index.scss'
+import Header from "./components/Header";
 
 
 
@@ -9,9 +9,8 @@ function App() {
     return (
         <div className="App">
             <div className="container">
-
+                <Header/>
                 <Content/>
-
                 <Footer/>
             </div>
         </div>

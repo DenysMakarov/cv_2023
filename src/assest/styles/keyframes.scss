@@ -97,6 +97,18 @@
   }
 }
 
+@keyframes footer-desc-appear {
+  0%{
+    opacity: 0;
+    bottom: 15%;
+  }
+
+  100%{
+    opacity: 1;
+    bottom: 9%;
+  }
+}
+
 @keyframes card {
   0%{
     opacity: 0;
@@ -109,6 +121,48 @@
     opacity: 1;
     transform: rotateX(0deg) rotateY(0deg) rotate(0deg) translateX(0px) translateY(0) translateZ(0px);
     -webkit-transform: rotateX(0deg) rotateY(0deg) rotate(0deg) translateX(0px) translateY(0) translateZ(0px);
+  }
+}
+
+@keyframes footer-icon {
+  0%{
+    transform: rotate(0deg);
+  }
+  5%{
+    transform: rotate(12deg);
+  }
+  10%{
+    transform: rotate(-12deg);
+  }
+  15%{
+    transform: rotate(8deg);
+  }
+  20%{
+    transform: rotate(-8deg);
+  }
+  25%{
+    transform: rotate(4deg);
+  }
+  30%{
+    transform: rotate(-4deg);
+  }
+  35%{
+    transform: rotate(2deg);
+  }
+  40%{
+    transform: rotate(-2deg);
+  }
+  45%{
+    transform: rotate(1deg);
+  }
+  50%{
+    transform: rotate(-1deg);
+  }
+  55%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(0deg);
   }
 }
 

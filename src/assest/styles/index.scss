@@ -1,14 +1,18 @@
-@import "src/assest/css/content";
-@import "src/assest/css/restaraunt";
-@import "src/assest/css/shoesStore";
-@import "src/assest/css/eventTicketStore";
-@import "src/assest/css/game";
-@import "src/assest/css/slider";
-@import "src/assest/css/footer";
+@import "src/assest/styles/content";
+@import "src/assest/styles/scss/restaraunt";
+@import "src/assest/styles/scss/shoesStore";
+@import "src/assest/styles/scss/eventTicketStore";
+@import "src/assest/styles/scss/game";
+@import "src/assest/styles/scss/slider";
+@import "src/assest/styles/scss/footer";
+@import "src/assest/styles/scss/header";
+@import "src/assest/styles/scss/thisPage";
 @import "keyframes";
 @import "node_modules/normalize-scss/sass/normalize";
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
 
 
 html{
