@@ -1,5 +1,4 @@
 import React, {FC, useEffect} from 'react';
-import {observable} from "mobx";
 import {observer} from "mobx-react";
 import {useStore} from "../hooks/useStore";
 
@@ -23,14 +22,13 @@ interface LeftBlockProps {
     setNum: (num: number) => void
 }
 
-const LeftBlock : FC<LeftBlockProps> = observer(({setNum}) => {
+const LeftBlock : FC= ()=> {
 
     const switcher = useStore('switcher')
 
     return (
         <div className="left-block">
             {titleObj.map((el, idx) => (
-                // <div key={el.title + idx} className="work" onMouseOver={() => setNum(idx+1)}>
                 <div key={el.title + idx} className="work" onMouseOver={() => switcher.setCount(idx+1)}>
                     <div className="number-block">
                         <div className='number'>{`0${idx+1}`}</div>
@@ -44,7 +42,7 @@ const LeftBlock : FC<LeftBlockProps> = observer(({setNum}) => {
             ))}
         </div>
     )
-})
+}
 
 
 

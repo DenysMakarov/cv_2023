@@ -1,17 +1,16 @@
 import React, {FC, useState} from 'react';
 import LeftBlock from "./LeftBlock";
 import RightBlock from "./RightBlock";
+import {observer} from "mobx-react";
 
 
-const Content : FC = () => {
-    const [num, setNum] = useState<number>(1)
-
+const Content : FC= () => {
     return (
         <section className='content'>
-            <LeftBlock num={num} setNum={setNum} />
-            <RightBlock num={num}/>
+            <LeftBlock />
+            <RightBlock />
         </section>
-    );
-};
+    )
+}
 
 export default Content;

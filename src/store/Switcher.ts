@@ -3,7 +3,7 @@ import {action, makeAutoObservable, observable} from "mobx";
 
 export class Switcher {
 
-    count: number = 0;
+    count: number = 1;
 
     constructor() {
         makeAutoObservable(this, {
