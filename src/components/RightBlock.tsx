@@ -5,6 +5,8 @@ import EventTicketStore from "./works/eventTicketStore/EventTicketStore";
 import Slider from "./works/slider/Slider";
 import Game from "./works/game/Game";
 import ThisPage from "./works/thisPage/ThisPage";
+import {useStore} from "../hooks/useStore";
+import {observer} from "mobx-react";
 
 
 type ImgBlock = {
@@ -25,30 +27,33 @@ type RightBlockProps = {
 
 const RightBlock: FC<RightBlockProps> = ({num}) => {
 
+    // const switcher = useStore('switcher')
+    //
     // useEffect(() => {
-    //     console.log(num)
-    // }, [num])
-
-    const renderSwitch = (num: number) =>{
-        switch (num) {
-            case 1 : return <EventTicketStore num={num}/>
-            case 2 : return <EventTicketStore num={num}/>
-            case 3 : return <ShoesStore/>
-            case 4 : return <Restaurant/>
-            case 5 : return <Slider/>
-            case 6 : return <Game/>
-            case 7 : return <ThisPage/>
-            default : return <div>Hello</div>
-        }
-    }
+    //     console.log(switcher.count)
+    // }, [switcher.count])
+    //
+    //
+    // const renderSwitch = (num: number) =>{
+    //     switch (num) {
+    //         case 1 : return <EventTicketStore num={num}/>
+    //         case 2 : return <EventTicketStore num={num}/>
+    //         case 3 : return <ShoesStore/>
+    //         case 4 : return <Restaurant/>
+    //         case 5 : return <Slider/>
+    //         case 6 : return <Game/>
+    //         case 7 : return <ThisPage/>
+    //         default : return <div>Hello</div>
+    //     }
+    // }
 
     return (
         <div className='right-block'>
-            {
-                renderSwitch(num)
-            }
+            {/*{*/}
+            {/*    renderSwitch(switcher.count)*/}
+            {/*}*/}
         </div>
-    );
-};
+    )
+}
 
 export default RightBlock;

@@ -28,30 +28,30 @@ const Footer = () => {
 
                     <div className="r-icon"><AiOutlineSkype className='icon'
                                                             onMouseOver={() => SetInfo('live:beae20f7dab8e21a')}
-                                                            onClick={() => window.location.href = 'skype:live:beae20f7dab8e21a?call'}
+                                                            // onClick={() => window.location.href = 'skype:live:beae20f7dab8e21a?call'}
                     /></div>
 
                     <div className="r-icon"><ImMobile className='icon'
                                                       onMouseOver={() => SetInfo('+18254377728')}
-                                                      onClick={() => window.location.href = 'tel:+18254377728'}
+                                                      // onClick={() => window.location.href = 'tel:+18254377728'}
                     />
                     </div>
 
                     <div className="r-icon"><FiMail className='icon'
                                                     onMouseOver={() => SetInfo('mdamywork@gmail.com')}
-                                                    onClick={() => window.open('mailto:mdamywork@gmail.com')}
+                                                    // onClick={() => window.open('mailto:mdamywork@gmail.com')}
 
                     /></div>
 
                     <div className="r-icon"><IoLogoLinkedin className='icon'
                                                             onMouseOver={() => SetInfo('Go to Linkedin')}
-                                                            onClick={() => window.location.href = 'https://www.linkedin.com/in/denys-makarov-4793a41ba'}
+                                                            // onClick={() => window.location.href = 'https://www.linkedin.com/in/denys-makarov-4793a41ba'}
 
                     />
                     </div>
                     <div className="r-icon"><AiFillFacebook className='icon'
                                                             onMouseOver={() => SetInfo('Go to Facebook')}
-                                                            onClick={() => window.location.href = 'https://www.facebook.com/profile.php?id=100027481040177'}
+                                                            // onClick={() => window.location.href = 'https://www.facebook.com/profile.php?id=100027481040177'}
                     />
                     </div>
                     <p>2018 - Best wishes, Denys Makarov</p>
