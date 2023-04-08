@@ -4,6 +4,9 @@
   color: #ffffff;
   padding-left: 40px;
 
+  & h2{
+  font-family: 'Libre Franklin', sans-serif;
+}
 
   & .skills {
     //border: 1px solid red;
@@ -13,6 +16,7 @@
     //justify-content: space-between;
     gap: 25px;
     position: relative;
+
 
     & .skill {
       width: 80px;
@@ -28,6 +32,11 @@
       animation-duration: .5s;
       opacity: 0;
       cursor: pointer;
+
+      @media screen and (max-width: 1440px) {
+        width: 60px;
+        height: 60px;
+      }
 
 
       & .issue {
@@ -105,11 +114,10 @@
   opacity: 0;
   position: absolute;
   width: 50%;
-  height: 145%;
+  height: 200%;
   background-size: cover;
   background-image: url('../../img/skills/me.jpg');
   background-image: linear-gradient(to right, rgba(0,0,0,.4), rgba(255,255,255,0) ), url('../../img/skills/me.jpg');
-
   top: -25%;
   right: -10%;
   border-top-left-radius: 50%;
@@ -117,8 +125,11 @@
   overflow: hidden;
   background-position: -120px 0;
 
+  @media screen and (max-width: 1920px) {
+    height: 145%;
+    background-position: -100px 0;
+  }
 
-  //background: linear-gradient(270deg, #d9b68c 0%, #8baed9 10%)
 }
 
 //https://iconscout.com/icons/css-logo

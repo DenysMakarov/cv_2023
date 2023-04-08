@@ -30,13 +30,13 @@
 
     & .icon{
       fill: white;
-      color: black;
       width: 50%;
       height: 50%;
       cursor: pointer;
       //animation-name: footer-icon;
       animation-fill-mode: forwards;
       animation-duration: .8s;
+
 
       &:hover{
         animation-name: footer-icon;

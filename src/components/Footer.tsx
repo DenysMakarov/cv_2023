@@ -5,6 +5,7 @@ import {FiMail} from 'react-icons/fi';
 import {ImMobile} from 'react-icons/im';
 import {IoLogoLinkedin} from 'react-icons/io';
 import {AiFillFacebook} from 'react-icons/ai';
+import {BiEnvelope} from 'react-icons/bi';
 
 
 const Footer = () => {
@@ -37,7 +38,7 @@ const Footer = () => {
                     />
                     </div>
 
-                    <div className="r-icon"><FiMail className='icon'
+                    <div className="r-icon"><BiEnvelope className='icon'
                                                     onMouseOver={() => SetInfo('mdamywork@gmail.com')}
                                                     // onClick={() => window.open('mailto:mdamywork@gmail.com')}
 

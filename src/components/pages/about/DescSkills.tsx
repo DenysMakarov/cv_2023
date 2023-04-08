@@ -67,6 +67,27 @@ const DescSkills = () => {
         window.open(url, '_blank');
     }
 
+    const downloadPdf = async (fileName:string) => {
+        try {
+            const response = await fetch('/.netlify/functions/download-pdf', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ fileName }),
+            });
+            const blob = await response.blob();
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', fileName);
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } catch (error) {
+            console.error(error);
+        }
+    };
 
     return (
         <div className='desc-box'>
@@ -85,7 +106,7 @@ const DescSkills = () => {
                 <button onClick={showFile} className='other-skills'>Other Skills</button>
             </div>
 
-            <button onClick={downloadFile} className='cv-download'>Download resume</button>
+            <button onClick={() => downloadPdf('denys_makarov_cv')} className='cv-download'>Download resume</button>
         </div>
     );
 };
