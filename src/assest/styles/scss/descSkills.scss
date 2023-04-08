@@ -123,14 +123,16 @@
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
   overflow: hidden;
-  background-position: -120px 0;
+  background-position: 0px 0;
 
   @media screen and (max-width: 1920px) {
     height: 145%;
-    background-position: -100px 0;
+    background-position: -90px 0;
   }
 
 }
 
+//https://pinetools.com/invert-image-colors
 //https://iconscout.com/icons/css-logo
 //<a href="https://iconscout.com/icons/typescript" target="_blank">Typescript Logo Icon</a> by <a href="https://iconscout.com/contributors/icon-54">Icon 54</a> on <a href="https://iconscout.com">IconScout</a>
+
