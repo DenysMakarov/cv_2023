@@ -1,6 +1,6 @@
 import React, {FC, useEffect} from 'react';
+import {useStore} from "../../../hooks/useStore";
 import {observer} from "mobx-react";
-import {useStore} from "../hooks/useStore";
 
 interface TitleObj {
     title: string,
@@ -22,14 +22,16 @@ interface LeftBlockProps {
     setNum: (num: number) => void
 }
 
-const LeftBlock : FC= ()=> {
+const LeftBlock : FC= observer(()=> {
 
-    const switcher = useStore('switcher')
+    const switcher = useStore('workToggle')
 
     return (
         <div className="left-block">
             {titleObj.map((el, idx) => (
-                <div key={el.title + idx} className="work" onMouseOver={() => switcher.setCount(idx+1)}>
+                <div key={el.title + idx} className="work" onMouseOver={() => switcher.setCount(idx+1)}
+                    style={{animationDelay: '.' +idx + 's'}}
+                >
                     <div className="number-block">
                         <div className='number'>{`0${idx+1}`}</div>
                     </div>
@@ -42,7 +44,7 @@ const LeftBlock : FC= ()=> {
             ))}
         </div>
     )
-}
+})
 
 
 

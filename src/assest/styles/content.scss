@@ -15,8 +15,11 @@
   position: relative;
   box-sizing: border-box;
   display: flex;
-  //border: 1px solid red;
-  //margin: 0;
+  //overflow: auto;
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
 
 }
 
@@ -35,6 +38,10 @@
     //border: 1px solid red;
     padding: 13px 10px;
     position: relative;
+    opacity: 0;
+    animation-name: work-appear;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
 
 
     div {

@@ -1,7 +1,7 @@
 import {action, makeAutoObservable, observable} from "mobx";
 
 
-export class Switcher {
+export class WorkToggle {
 
     count: number = 1;
 

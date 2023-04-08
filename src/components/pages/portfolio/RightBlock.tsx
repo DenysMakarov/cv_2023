@@ -1,18 +1,18 @@
 import React, {FC, useEffect} from 'react';
-import Restaurant from "./works/restaurant/Restaurant";
-import ShoesStore from "./works/shoesStore/ShoesStore";
-import EventTicketStore from "./works/eventTicketStore/EventTicketStore";
-import Slider from "./works/slider/Slider";
-import Game from "./works/game/Game";
-import ThisPage from "./works/thisPage/ThisPage";
-import {useStore} from "../hooks/useStore";
+import Restaurant from "../../works/restaurant/Restaurant";
+import ShoesStore from "../../works/shoesStore/ShoesStore";
+import EventTicketStore from "../../works/eventTicketStore/EventTicketStore";
+import Slider from "../../works/slider/Slider";
+import Game from "../../works/game/Game";
+import ThisPage from "../../works/thisPage/ThisPage";
+import {useStore} from "../../../hooks/useStore";
 import {observer} from "mobx-react";
 
 
 
 const RightBlock : FC= observer(() => {
 
-    const switcher = useStore('switcher')
+    const switcher = useStore('workToggle')
 
         const renderSwitch = (num: number) =>{
         switch (num) {

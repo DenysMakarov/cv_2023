@@ -1,4 +1,4 @@
-import {RootStore, RootStoreContext} from "../store/storConfigue";
+import {RootStore, RootStoreContext} from "../store/storeConfigue";
 import {useContext} from "react";
 
 

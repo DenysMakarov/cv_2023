@@ -1,10 +1,12 @@
 import {configure} from "mobx";
-import {Switcher} from "./Switcher";
+import {WorkToggle} from "./WorkToggle";
 import {createContext} from "react";
+import {PageToggle} from "./PageToggle";
 
 
 configure({enforceActions: 'observed'})
 export class RootStore{
-    switcher = new Switcher()
+    workToggle = new WorkToggle()
+    pageToggle = new PageToggle()
 }
 export const RootStoreContext = createContext(new RootStore())
