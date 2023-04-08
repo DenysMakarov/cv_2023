@@ -106,7 +106,7 @@ const DescSkills = () => {
                 <button onClick={showFile} className='other-skills'>Other Skills</button>
             </div>
 
-            <button onClick={() => downloadPdf('denys_makarov_cv')} className='cv-download'>Download resume</button>
+            <button onClick={downloadFile} className='cv-download'>Download resume</button>
         </div>
     );
 };
