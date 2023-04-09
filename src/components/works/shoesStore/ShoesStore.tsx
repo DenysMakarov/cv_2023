@@ -1,4 +1,5 @@
 import React, {FC} from 'react';
+import {titleObj} from "../../pages/portfolio/LeftBlock";
 
 
 const ShoesStore: FC = () => {
@@ -7,13 +8,13 @@ const ShoesStore: FC = () => {
 
             <div className='wrapper-box'>
                 <div className="hd">
-                    <div className="hd-img"/>
+                    <div className="hd-img" onClick={() => window.location.href=titleObj[2].link}/>
                 </div>
                 <div className="tablet">
-                    <div className="tablet-img"/>
+                    <div className="tablet-img" onClick={() => window.location.href=titleObj[2].link}/>
                 </div>
                 <div className="mobile">
-                    <div className="mobile-img"/>
+                    <div className="mobile-img" onClick={() => window.location.href=titleObj[2].link}/>
                 </div>
             </div>
 

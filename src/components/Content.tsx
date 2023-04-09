@@ -10,10 +10,6 @@ import Picture from "./pages/about/Picture";
 const Content: FC = observer(() => {
     const page = useStore('pageToggle')
 
-    // useEffect(() => {
-    //     console.log(page.page)
-    // }, [page.page])
-
     return (
         <section className='content'>
             {
@@ -27,9 +23,7 @@ const Content: FC = observer(() => {
                         <DescSkills/>
                         <Picture/>
                     </>
-
             }
-
         </section>
     )
 })

@@ -1,21 +1,21 @@
-import React from 'react';
+import React, {FC, FunctionComponent} from 'react';
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 
 
-function App() {
+const App: FC = (): JSX.Element => {
     return (
         <div className="App">
             <div className="container">
-                <Header/>
-                <Content/>
-                <Footer/>
+                <Header />
+                <Content />
+                <Footer />
             </div>
         </div>
     );
-}
+};
 
 export default App;
 

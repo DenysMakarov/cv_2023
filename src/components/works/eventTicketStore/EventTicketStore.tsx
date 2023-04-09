@@ -1,22 +1,24 @@
 import React, {FC} from 'react';
+import {titleObj} from "../../pages/portfolio/LeftBlock";
 
 type RightBlockProps = {
     num: number
 }
 
 const EventTicketStore: FC<RightBlockProps> = ({num}) => {
+
     return (
         <div className='event restaurant'>
 
             <div className='wrapper-box'>
                 <div className="hd">
-                    <div className="hd-img"/>
+                    <div className="hd-img" onClick={() => window.location.href=titleObj[0].link}/>
                 </div>
-                <div className="tablet">
-                    <div className="tablet-img"/>
+                <div className="tablet" >
+                    <div className="tablet-img" onClick={() => window.location.href=titleObj[0].link}/>
                 </div>
                 <div className="mobile">
-                    <div className="mobile-img"/>
+                    <div className="mobile-img" onClick={() => window.location.href=titleObj[0].link}/>
                 </div>
 
                 {

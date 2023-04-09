@@ -2,14 +2,14 @@ import React, {FC, useEffect} from 'react';
 import {useStore} from "../../../hooks/useStore";
 import {observer} from "mobx-react";
 
-interface TitleObj {
+export interface TitleObj {
     title: string,
     desc: string,
     link: string,
     git: string
 }
 
-const titleObj: TitleObj[] = [
+export const titleObj: TitleObj[] = [
     {
         title: 'Event Ticket Store  |  Front-End',
         desc: 'React | Redux (Saga) | MobX | TypeScript | SCSS | Webpack',
@@ -37,18 +37,13 @@ const titleObj: TitleObj[] = [
     {
         title: 'Game', desc: 'JavaScript, Html, Scss',
         link: 'https://denysmakarov.github.io/New_CV_Game/dist/index.html',
-        git: 'https://github.com/DenysMakarov/CV_FrontEnd_WRC'},
+        git: 'https://github.com/DenysMakarov/New_CV_Game'},
     {
         title: 'This Page', desc: 'TypeScript | React | MobX | Scss | AWS',
         link: 'https://denysmakarov.github.io/Old_React/dist/#/',
-        git: 'https://github.com/DenysMakarov/New_CV_Game'
+        git: 'https://github.com/DenysMakarov/cv_2023'
     },
 ]
-
-interface LeftBlockProps {
-    num?: number;
-    setNum: (num: number) => void
-}
 
 const LeftBlock: FC = observer(() => {
 
@@ -56,20 +51,19 @@ const LeftBlock: FC = observer(() => {
 
     return (
         <div className="left-block">
-            {titleObj.map((el, idx) => (
+            {titleObj.map((el:TitleObj, idx) => (
                 <div key={el.title + idx} className="work"
                      onMouseOver={() => switcher.setCount(idx + 1)}
-
                      style={{animationDelay: '.' + idx + 's'}}
                 >
                     <div className="number-block">
                         <div className='number'>{`0${idx + 1}`}</div>
                     </div>
-                    <div className={'title-block'}>
+                    <div className={'title-block'} onClick={() => window.location.href=`${el.link}`}>
                         <h1 className="title">{el.title}</h1>
                         <p className="desc">{el.desc}</p>
                     </div>
-                    <button className='git-link'>Git</button>
+                    <button className='git-link' onClick={() => window.location.href=`${el.git}`}>Git</button>
                 </div>
             ))}
         </div>

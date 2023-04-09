@@ -1,4 +1,5 @@
 import React from 'react';
+import {titleObj} from "../../pages/portfolio/LeftBlock";
 
 const Slider = () => {
 
@@ -7,10 +8,10 @@ const Slider = () => {
 
             <div className='wrapper-box'>
                 <div className="hd">
-                    <div className="hd-img"/>
+                    <div className="hd-img" onClick={() => window.location.href=titleObj[4].link}/>
                 </div>
                 <div className="tablet">
-                    <div className="tablet-img"/>
+                    <div className="tablet-img" onClick={() => window.location.href=titleObj[4].link}/>
                 </div>
             </div>
         </div>
