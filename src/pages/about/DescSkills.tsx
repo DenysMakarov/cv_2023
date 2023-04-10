@@ -42,29 +42,55 @@ const skillsImgArr = [
 
 
 const DescSkills = () => {
+    const pathFile = 'http://18.217.92.59:5500/'
 
     const skills  = skillsImgArr.map((el) => {
         return {
             ...el,
-            title: require(`../../../assest/img/skills/${el.title}`) ?? ' ',
+            title: require(`../../assest/img/skills/${el.title}`) ?? ' ',
         }
     } );
 
-    const cv = require(`./denys_makarov_cv.pdf`)
+    const downloadFile = (): void => {
+        fetch(pathFile + 'api/cv/download/denys_makarov_cv.pdf')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.blob();
+            })
+            .then(blob => {
+                const url = window.URL.createObjectURL(new Blob([blob]));
 
-    const downloadFile = () => {
-        const url = cv;
-        const link = document.createElement('a');
-        link.href = url;
-        link.setAttribute('download', '');
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+                const link = document.createElement('a');
+                link.href = url;
+                link.setAttribute('download', 'Denys_Makarov_CV.pdf');
+                document.body.appendChild(link);
+                link.click();
+
+                if (link.parentNode) {
+                    link.parentNode.removeChild(link);
+                }
+
+                window.URL.revokeObjectURL(url);
+            })
+            .catch(error => {
+                console.error('Something wrong... :', error);
+            });
+
     };
 
     const showFile = () => {
-        const url = cv;
-        window.open(url, '_blank');
+        const newWindow = window.open('', '_blank');
+
+        fetch(pathFile + 'api/cv/download/denys_makarov_cv.pdf')
+            .then(response => response.blob())
+            .then(blob => {
+                const url = URL.createObjectURL(blob);
+                if (newWindow) {
+                    newWindow.location.href = url;
+                }
+            });
     }
 
     const downloadPdf = async (fileName:string) => {

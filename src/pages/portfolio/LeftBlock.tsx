@@ -1,5 +1,5 @@
 import React, {FC, useEffect} from 'react';
-import {useStore} from "../../../hooks/useStore";
+import {useStore} from "../../hooks/useStore";
 import {observer} from "mobx-react";
 
 export interface TitleObj {

@@ -1,10 +1,10 @@
 import React, {FC, useEffect, useState} from 'react';
-import LeftBlock from "./pages/portfolio/LeftBlock";
-import RightBlock from "./pages/portfolio/RightBlock";
+import LeftBlock from "../pages/portfolio/LeftBlock";
+import RightBlock from "../pages/portfolio/RightBlock";
 import {useStore} from "../hooks/useStore";
 import {observer} from "mobx-react";
-import DescSkills from "./pages/about/DescSkills";
-import Picture from "./pages/about/Picture";
+import DescSkills from "../pages/about/DescSkills";
+import Picture from "../pages/about/Picture";
 
 
 const Content: FC = observer(() => {

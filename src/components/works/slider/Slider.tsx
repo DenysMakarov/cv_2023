@@ -1,5 +1,5 @@
 import React from 'react';
-import {titleObj} from "../../pages/portfolio/LeftBlock";
+import {titleObj} from "../../../pages/portfolio/LeftBlock";
 
 const Slider = () => {
 

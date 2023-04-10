@@ -1,11 +1,11 @@
 import React, {FC, useEffect} from 'react';
-import Restaurant from "../../works/restaurant/Restaurant";
-import ShoesStore from "../../works/shoesStore/ShoesStore";
-import EventTicketStore from "../../works/eventTicketStore/EventTicketStore";
-import Slider from "../../works/slider/Slider";
-import Game from "../../works/game/Game";
-import ThisPage from "../../works/thisPage/ThisPage";
-import {useStore} from "../../../hooks/useStore";
+import Restaurant from "../../components/works/restaurant/Restaurant";
+import ShoesStore from "../../components/works/shoesStore/ShoesStore";
+import EventTicketStore from "../../components/works/eventTicketStore/EventTicketStore";
+import Slider from "../../components/works/slider/Slider";
+import Game from "../../components/works/game/Game";
+import ThisPage from "../../components/works/thisPage/ThisPage";
+import {useStore} from "../../hooks/useStore";
 import {observer} from "mobx-react";
 
 
