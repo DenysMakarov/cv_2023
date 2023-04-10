@@ -61,7 +61,7 @@ const DescSkills = () => {
             })
             .then(blob => {
                 const url = window.URL.createObjectURL(new Blob([blob]));
-
+console.log(blob)
                 const link = document.createElement('a');
                 link.href = url;
                 link.setAttribute('download', 'Denys_Makarov_CV.pdf');
@@ -78,6 +78,8 @@ const DescSkills = () => {
                 console.error('Something wrong... :', error);
             });
 
+
+        // console.log('File :'  + )
     };
 
     const showFile = () => {
@@ -92,28 +94,6 @@ const DescSkills = () => {
                 }
             });
     }
-
-    const downloadPdf = async (fileName:string) => {
-        try {
-            const response = await fetch('/.netlify/functions/download-pdf', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ fileName }),
-            });
-            const blob = await response.blob();
-            const url = window.URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.setAttribute('download', fileName);
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        } catch (error) {
-            console.error(error);
-        }
-    };
 
     return (
         <div className='desc-box'>
