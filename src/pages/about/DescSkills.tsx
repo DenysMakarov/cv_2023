@@ -61,7 +61,7 @@ const DescSkills = () => {
             })
             .then(blob => {
                 const url = window.URL.createObjectURL(new Blob([blob]));
-console.log(blob)
+                console.log(blob)
                 const link = document.createElement('a');
                 link.href = url;
                 link.setAttribute('download', 'Denys_Makarov_CV.pdf');
@@ -103,7 +103,7 @@ console.log(blob)
                     skills.map((el, idx) => (
                         <div key={el.title + idx} className='skill' style={{
                             backgroundImage: `url(${el.title})`,
-                            animationDelay: `${el.delay}s`
+                            animationDelay: `${el.delay}s`,
                         }}>
                             <div className='issue'>{el.issue}</div>
                         </div>

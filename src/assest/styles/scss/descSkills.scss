@@ -38,6 +38,17 @@
         height: 60px;
       }
 
+      &:nth-child(5){
+        background: rgba(255,255,255,0.6);
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:nth-child(12){
+        background: antiquewhite;
+        background-size: cover;
+      }
 
       & .issue {
         position: absolute;
