@@ -25,10 +25,13 @@
 
     & h1{
       transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
-
       animation-name: title;
       animation-fill-mode: forwards;
       animation-duration: .5s;
+
+      @media screen and (max-width: 1440px) {
+        font-size: 30px;
+      }
     }
   }
 
