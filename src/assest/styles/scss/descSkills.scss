@@ -61,12 +61,9 @@
 
       & .issue {
         position: absolute;
-        //width: 100px;
-        //height: 30px;
         padding: 10px;
         border: 1px solid red;
         top: -60%;
-        //left: -15%;
         border-radius: 5px;
         background: black;
         display: flex;
@@ -75,6 +72,12 @@
         font-family: 'Libre Franklin', sans-serif;
         transition: .3s;
         opacity: 0;
+
+        @media screen and (max-width: 1440px) {
+          padding: 7px;
+          font-size: 10px;
+
+        }
       }
 
       &:hover > .issue {
