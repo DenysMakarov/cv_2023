@@ -42,7 +42,8 @@ const skillsImgArr = [
 
 
 const DescSkills = () => {
-    const pathFile = 'http://18.217.92.59:5500/'
+    // const pathFile = 'http://18.217.92.59:5500/'
+    const pathFile = 'https://cv-portfolio-api.onrender.com/'
 
     const skills  = skillsImgArr.map((el) => {
         return {
