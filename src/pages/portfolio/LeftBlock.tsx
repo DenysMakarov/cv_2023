@@ -25,19 +25,23 @@ export const titleObj: TitleObj[] = [
     {
         title: 'Sneakers store', desc: 'Node.js | Express | JavaScript | Handlebars | Jwt',
         link: 'https://denysmakarov.github.io/New_CV_SneakersShop/dist/index.html',
-        git: 'https://github.com/DenysMakarov/New_CV_SneakersShop'},
+        git: 'https://github.com/DenysMakarov/New_CV_SneakersShop'
+    },
     {
         title: 'Restaurant', desc: 'JavaScript | Scss | Html | Webpack',
         link: 'https://denysmakarov.github.io/New_CV_restaurant/dist/',
-        git: 'https://github.com/DenysMakarov/New_CV_restaurant'},
+        git: 'https://github.com/DenysMakarov/New_CV_restaurant'
+    },
     {
         title: 'Slider Library', desc: 'JavaScript | Html | CSS -> You can buy it on www.codester.com',
         link: 'https://www.codester.com/items/preview/20183/magicslider-javascript-css-html',
-        git: 'https://www.codester.com/items/preview/20183/magicslider-javascript-css-html'},
+        git: 'https://www.codester.com/items/preview/20183/magicslider-javascript-css-html'
+    },
     {
         title: 'Game', desc: 'JavaScript, Html, Scss',
         link: 'https://denysmakarov.github.io/New_CV_Game/dist/index.html',
-        git: 'https://github.com/DenysMakarov/New_CV_Game'},
+        git: 'https://github.com/DenysMakarov/New_CV_Game'
+    },
     {
         title: 'This Page', desc: 'TypeScript | React | MobX | Scss | AWS',
         link: 'https://denysmakarov.github.io/Old_React/dist/#/',
@@ -63,7 +67,8 @@ const LeftBlock: FC = observer(() => {
                         <h1 className="title">{el.title}</h1>
                         <p className="desc">{el.desc}</p>
                     </div>
-                    <button className='git-link' onClick={() => window.location.href=`${el.git}`}>Git</button>
+                    <button className='git-link' >Git</button>
+                    {/*<button className='git-link' onClick={() => window.location.href=`${el.git}`}>Git</button>*/}
                 </div>
             ))}
         </div>
