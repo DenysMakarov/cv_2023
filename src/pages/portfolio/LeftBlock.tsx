@@ -29,7 +29,7 @@ export const titleObj: TitleObj[] = [
     },
     {
         title: 'Restaurant', desc: 'JavaScript | Scss | Html | Webpack',
-        link: 'https://denysmakarov.github.io/New_CV_restaurant/dist/',
+        link: 'https://cv-mda-rest.netlify.app',
         git: 'https://github.com/DenysMakarov/New_CV_restaurant'
     },
     {
@@ -39,7 +39,8 @@ export const titleObj: TitleObj[] = [
     },
     {
         title: 'Game', desc: 'JavaScript, Html, Scss',
-        link: 'https://denysmakarov.github.io/New_CV_Game/dist/index.html',
+        link: 'https://cv-mda-game.netlify.app',
+        // link: 'https://denysmakarov.github.io/New_CV_Game/dist/index.html',
         git: 'https://github.com/DenysMakarov/New_CV_Game'
     },
     {
