@@ -12,7 +12,7 @@ export interface TitleObj {
 export const titleObj: TitleObj[] = [
     {
         title: 'Event Ticket Store  |  Front-End',
-        desc: 'React | Redux (Saga) | MobX | TypeScript | SCSS | Webpack',
+        desc: 'React | Redux (Saga) | TypeScript | SCSS | Webpack',
         link: 'https://denysmakarov.github.io/Old_React/dist/#/',
         git: 'https://github.com/DenysMakarov/CV_FrontEnd_WRC'
     },
