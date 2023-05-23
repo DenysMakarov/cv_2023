@@ -110,10 +110,9 @@ const DescSkills = () => {
                         </div>
                     ))
                 }
-                <button onClick={showFile} className='other-skills'>Other Skills</button>
+                {/*<button onClick={showFile} className='other-skills'>Other Skills</button>*/}
             </div>
-
-            <button onClick={downloadFile} className='cv-download'>Download resume</button>
+            {/*<button onClick={downloadFile} className='cv-download'>Download resume</button>*/}
         </div>
     );
 };
